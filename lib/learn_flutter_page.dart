@@ -39,7 +39,7 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
             padding: const EdgeInsets.all(20),
             child: const Center(
               child: Text(
-                "never gonna give you up",
+                "never gonna give you up never gonna let you down",
                 style: TextStyle(color: Color.fromARGB(255, 214, 68, 92)),
               ),
             ),
