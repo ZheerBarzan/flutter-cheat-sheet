@@ -103,19 +103,18 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
             },
           ),
           Checkbox(
-              value: isCheckbox,
-              onChanged: (bool? newBool) {
-                setState(
-                  () {
-                    isCheckbox = newBool;
-                  },
-                );
-              },
-            ),
-            Image.network(
-                "https://th.bing.com/th/id/R.4e6eaceeb14b75b20cd33f7b079c2a25?rik=L6YjcvqIqRyJZw&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f4%2f44%2fAlbert_Einstein_Head_Cleaned_N_Cropped.jpg&ehk=nkqiYpuBU%2fezd%2b1OjMDLtd%2bTM4OL99AjnXZxuxKKJzU%3d&risl=&pid=ImgRaw&r=0")
-          ],
-        ),
+            value: isCheckbox,
+            onChanged: (bool? newBool) {
+              setState(
+                () {
+                  isCheckbox = newBool;
+                },
+              );
+            },
+          ),
+          Image.network(
+              "https://th.bing.com/th/id/R.4e6eaceeb14b75b20cd33f7b079c2a25?rik=L6YjcvqIqRyJZw&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f4%2f44%2fAlbert_Einstein_Head_Cleaned_N_Cropped.jpg&ehk=nkqiYpuBU%2fezd%2b1OjMDLtd%2bTM4OL99AjnXZxuxKKJzU%3d&risl=&pid=ImgRaw&r=0")
+        ],
       ),
     );
   }
