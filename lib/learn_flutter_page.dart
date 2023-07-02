@@ -29,81 +29,80 @@ class _LearnFlutterPageState extends State<LearnFlutterPage> {
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Image.asset('images/rick.gif'),
-            const SizedBox(
-              height: 10,
-            ),
-            const Divider(
-              color: Colors.blue,
-            ),
-            Container(
-              color: Colors.blue.shade400,
-              width: double.infinity,
-              margin: const EdgeInsets.all(20),
-              padding: const EdgeInsets.all(20),
-              child: const Center(
-                child: Text(
-                  "never gonna give you up",
-                  style: TextStyle(color: Color.fromARGB(255, 214, 68, 92)),
-                ),
+      body: Column(
+        children: [
+          Image.asset('images/rick.gif'),
+          const SizedBox(
+            height: 10,
+          ),
+          const Divider(
+            color: Colors.blue,
+          ),
+          Container(
+            color: Colors.blue.shade400,
+            width: double.infinity,
+            margin: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
+            child: const Center(
+              child: Text(
+                "never gonna give you up",
+                style: TextStyle(color: Color.fromARGB(255, 214, 68, 92)),
               ),
             ),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: isSwitch
-                    ? const Color.fromARGB(255, 0, 188, 212)
-                    : const Color.fromARGB(255, 81, 168, 84),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: isSwitch
+                  ? const Color.fromARGB(255, 0, 188, 212)
+                  : const Color.fromARGB(255, 81, 168, 84),
+            ),
+            onPressed: () {},
+            child: const Text("eleveted button"),
+          ),
+          OutlinedButton(
+            style: ElevatedButton.styleFrom(
+              foregroundColor: isSwitch
+                  ? const Color.fromARGB(255, 0, 188, 212)
+                  : const Color.fromARGB(255, 81, 168, 84),
+            ),
+            onPressed: () {},
+            child: const Text("outlined button"),
+          ),
+          TextButton(
+            style: ElevatedButton.styleFrom(
+              foregroundColor: isSwitch
+                  ? const Color.fromARGB(255, 0, 188, 212)
+                  : const Color.fromARGB(255, 81, 168, 84),
+            ),
+            onPressed: () {},
+            child: const Text("text button"),
+          ),
+          const Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Icon(
+                Icons.apple,
+                color: Color.fromARGB(255, 101, 104, 105),
               ),
-              onPressed: () {},
-              child: const Text("eleveted button"),
-            ),
-            OutlinedButton(
-              style: ElevatedButton.styleFrom(
-                foregroundColor: isSwitch
-                    ? const Color.fromARGB(255, 0, 188, 212)
-                    : const Color.fromARGB(255, 81, 168, 84),
+              Icon(
+                Icons.android,
+                color: Color.fromARGB(255, 114, 190, 117),
               ),
-              onPressed: () {},
-              child: const Text("outlined button"),
-            ),
-            TextButton(
-              style: ElevatedButton.styleFrom(
-                foregroundColor: isSwitch
-                    ? const Color.fromARGB(255, 0, 188, 212)
-                    : const Color.fromARGB(255, 81, 168, 84),
+              Icon(
+                Icons.window_sharp,
+                color: Color.fromARGB(255, 80, 149, 205),
               ),
-              onPressed: () {},
-              child: const Text("text button"),
-            ),
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Icon(
-                  Icons.apple,
-                  color: Color.fromARGB(255, 101, 104, 105),
-                ),
-                Icon(
-                  Icons.android,
-                  color: Color.fromARGB(255, 114, 190, 117),
-                ),
-                Icon(
-                  Icons.window_sharp,
-                  color: Color.fromARGB(255, 80, 149, 205),
-                ),
-              ],
-            ),
-            Switch(
-              value: isSwitch,
-              onChanged: (bool newBool) {
-                setState(() {
-                  isSwitch = newBool;
-                });
-              },
-            ),
-            Checkbox(
+            ],
+          ),
+          Switch(
+            value: isSwitch,
+            onChanged: (bool newBool) {
+              setState(() {
+                isSwitch = newBool;
+              });
+            },
+          ),
+          Checkbox(
               value: isCheckbox,
               onChanged: (bool? newBool) {
                 setState(
